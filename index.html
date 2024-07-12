@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player with Audio Visualizer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Music Player with Audio Visualizer</h1>
+      <input type="file" id="audioFile" accept="audio/*" />
+      <div id="player-controls">
+        <button id="play" class="control-button">Play</button>
+        <button id="pause" class="control-button">Pause</button>
+        <button id="stop" class="control-button">Stop</button>
+        <span id="currentTime">00:00</span> / <span id="duration">00:00</span>
+      </div>
+      <div id="visualizer-controls">
+        <label for="visualizationType">Visualizer:</label>
+        <select id="visualizationType" class="control-select">
+          <option value="bars">Bars</option>
+          <option value="waveform">Waveform</option>
+        </select>
+      </div>
+      <canvas id="visualizerCanvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
