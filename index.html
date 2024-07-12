@@ -9,7 +9,12 @@
   <body>
     <div class="container">
       <h1>Music Player with Audio Visualizer</h1>
-      <input type="file" id="audioFile" accept="audio/*" />
+
+      <div class="file-input-wrapper">
+        <input type="file" id="audioFile" accept="audio/*" />
+        <label for="audioFile" class="file-input-label">Choose a file ➲</label>
+        <span class="filename" id="filename">No file selected.</span>
+      </div>
       <div id="player-controls">
         <button id="play" class="control-button">Play</button>
         <button id="pause" class="control-button">Pause</button>

@@ -24,6 +24,41 @@ h1 {
   color: #333;
 }
 
+.file-input-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.filename {
+  margin: 5px;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #bebebe;
+}
+
+.file-input-wrapper input[type="file"] {
+  display: none;
+}
+
+.file-input-label {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 250px;
+}
+
+.file-input-label:hover {
+  background-color: #45a049;
+}
+
 #player-controls,
 #visualizer-controls {
   display: flex;
